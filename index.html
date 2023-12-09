@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind Script  -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- box-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://preview.colorlib.com/theme/timezone/assets/img/favicon.ico">
+
+    <!-- animation -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	
+	<!--Title-->
+    <title>Watch Shop | eCommers</title>
+
+    <!-- style -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); /*font-family: 'Roboto', sans-serif;*/
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap'); /*font-family: 'Josefin Sans', sans-serif;*/
+
+        *{
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        p,h6{
+            font-family: 'Roboto', sans-serif;
+        }
+
+        nav.sticky{
+            position: fixed;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .heartbeat{
+            animation: heartbeat 1s infinite alternate;
+        }
+
+        @keyframes heartbeat {
+           100%{
+            transform: scale(1.03);
+           } 
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- nav -->
+    <nav class="flex justify-between w-full z-10 bg-white px-4 pt-8 lg:px-6">
+        <div class="logo h-14 animate__animated animate__zoomIn wow">
+            <img src="https://preview.colorlib.com/theme/timezone/assets/img/logo/logo.png" alt="">
+        </div>
+        <ul class="hidden text-base animate__animated animate__zoomIn wow font-semibold space-x-10 lg:flex">
+            <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="watch.html">Home</a></li>
+            <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="shop.html">Shop</a></li>
+            <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="watch.html">About</a></li>
+            <li class="group relative h-14 hover:text-[#ff2020] cursor-pointer transition duration-300">
+                <a href="watch.html">Latest</a>
+                <span class="absolute uppercase text-[10px] bg-[#ff003c] text-white px-1 h-5 rounded-md -top-4 left-11">hot</span>
+                <div class="absolute hidden bg-white w-40 p-4 group-hover:block border-t-4 border-[#ff2020] rounded-lg top-14 -left-3">
+                    <a href="watch.html">
+                        <h4 class="text-[#0b1c39] hover:text-[#ff2020] transition duration-300">Product List</h4>
+                    </a>
+                    <a href="product-detail.html">
+                        <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Product Details</h4>
+                    </a>
+                </div>
+            </li>
+            <li class="group relative h-14 hover:text-[#ff2020] cursor-pointer transition duration-300">
+                <a href="watch.html">Blog</a>
+                <div class="absolute hidden bg-white w-40 space-y-3 p-4 group-hover:block border-t-4 border-[#ff2020] rounded-lg top-14 -left-3">
+                    <a href="blog.html">
+                        <h4 class="text-[#0b1c39] hover:text-[#ff2020] transition duration-300">Blog</h4>
+                    </a>
+                    <a href="blog-detail.html">
+                        <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Blog Details</h4>
+                    </a>
+                </div>
+            </li>
+            <li class="group relative h-14 hover:text-[#ff2020] cursor-pointer transition duration-300">
+                <a href="watch.html">Pages</a>
+                <div class="absolute hidden bg-white w-44 space-y-3 p-4 group-hover:block border-t-4 border-[#ff2020] rounded-lg top-14 -left-3">
+                    <a href="login.html">
+                        <h4 class="text-[#0b1c39] hover:text-[#ff2020] transition duration-300">Login</h4>
+                    </a>
+                    <a href="cart.html">
+                        <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Cart</h4>
+                    </a>
+                    <a href="element.html">
+                        <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Element</h4>
+                    </a>
+                    <a href="watch.html">
+                        <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Confirmation</h4>
+                    </a>
+                    <a href="checkout.html">
+                        <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Product Checkout</h4>
+                    </a>
+                </div>
+            </li>
+            <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="flex text-base space-x-9 items-center animate__animated wow animate__zoomIn">
+            <div class="space-x-5 h-14">
+                <i class="fa-solid fa-magnifying-glass hover:text-[#ff2020] cursor-pointer transition duration-300"></i>
+                <i class="fa-regular fa-user hover:text-[#ff2020] cursor-pointer transition duration-300"></i>
+                <i class="fa-solid fa-cart-shopping hover:text-[#ff2020] cursor-pointer transition duration-300"></i>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="flex flex-wrap text-base justify-center font-semibold space-x-10 pt-4 lg:hidden">
+        <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="watch.html">Home</a></li>
+        <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="shop.html">Shop</a></li>
+        <li class="group relative h-14 z-10 hover:text-[#ff2020] cursor-pointer transition duration-300">
+            <a class="select-none">Latest</a>
+            <span class="hidden absolute uppercase text-[10px] bg-[#ff003c] text-white px-1 h-5 rounded-md -top-4 left-11 md:block">hot</span>
+            <div class="absolute hidden bg-white w-40 p-4 group-hover:block border-t-4 border-[#ff2020] rounded-lg top-14 -left-3">
+                <a href="watch.html">
+                    <h4 class="text-[#0b1c39] hover:text-[#ff2020] transition duration-300">Product List</h4>
+                </a>
+                <a href="product-detail.html">
+                    <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Product Details</h4>
+                </a>
+            </div>
+        </li>
+        <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="watch.html">About</a></li>
+        <li class="group relative h-14 z-10 hover:text-[#ff2020] cursor-pointer transition duration-300">
+            <a class="select-none">Blog</a>
+            <div class="absolute hidden bg-white w-40 space-y-3 p-4 group-hover:block border-t-4 border-[#ff2020] rounded-lg top-14 -left-3">
+                <a href="blog.html">
+                    <h4 class="text-[#0b1c39] hover:text-[#ff2020] transition duration-300">Blog</h4>
+                </a>
+                <a href="blog-detail.html">
+                    <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Blog Details</h4>
+                </a>
+            </div>
+        </li>
+        <li class="group relative h-14 hover:text-[#ff2020] cursor-pointer transition duration-300">
+            <a class="select-none">Pages</a>
+            <div class="absolute hidden z-10 bg-white w-44 space-y-3 p-4 group-hover:block border-t-4 border-[#ff2020] rounded-lg top-14 -left-3">
+                <a href="login.html">
+                    <h4 class="text-[#0b1c39] hover:text-[#ff2020] transition duration-300">Login</h4>
+                </a>
+                <a href="cart.html">
+                    <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Cart</h4>
+                </a>
+                <a href="element.html">
+                    <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Element</h4>
+                </a>
+                <a href="watch.html">
+                    <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Confirmation</h4>
+                </a>
+                <a href="checkout.html">
+                    <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Product Checkout</h4>
+                </a>
+            </div>
+        </li>
+        <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="contact.html">Contact</a></li>
+    </ul>
+
+
+    <!-- heropage -->
+    <section class="bg-[#f0f0f2] grid grid-cols-1 items-center overflow-hidden py-12 pt-28 px-4 md:py-0 md:pt-0 md:grid-cols-3 lg:px-20">
+        <div class="animate__animated animate__fadeInLeftBig wow md:col-span-2">
+            <h1 class="text-[#0b1c39] font-bold text-4xl leading-tight md:text-6xl lg:text-8xl">Select Your New Perfect Style</h1>
+            <p class="text-[#212025] font-normal text-[17px] pt-8">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat is aute irure.</p>
+            <button class="btn group relative bg-[#4a4a4b] text-white p-3 px-6 mt-10">
+                <div class="absolute w-0 inset-0 bg-[#ff2020] group-hover:w-full transition-all ease-in-out duration-700"></div>
+                <a class="relative text-base font-semibold uppercase" href="">shop now</a>
+            </button>
+        </div>
+        <div class="heartbeat md:block">
+            <img src="https://preview.colorlib.com/theme/timezone/assets/img/hero/watch.png" alt="">
+        </div>
+    </section>
+
+    <!-- new arrivals -->
+    <section class="py-12 mt-28">
+        <h1 class="text-4xl font-bold px-4 md:text-5xl lg:px-6">New Arrivals</h1>
+        <div class="grid grid-cols-1 gap-8 px-4 pt-12 animate__animated animate__fadeInUp wow md:grid-cols-3 lg:px-6">
+            <div class="text-center">
+                <img class="scale-[1.03] hover:scale-[1] mx-auto transition-transform duration-500" src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/new_product1.png" alt="">
+                <div class="pt-5">
+                    <h1 class="text-[#444444] text-2xl font-bold">Thermo Ball Etip Gloves</h1>
+                    <p class="text-[#ff2020] text-lg font-medium pt-2">$ 45,743</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <img class="scale-[1.03] hover:scale-[1] mx-auto transition-transform duration-500" src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/new_product2.png" alt="">
+                <div class="pt-5">
+                    <h1 class="text-[#444444] text-2xl font-bold">Thermo Ball Etip Gloves</h1>
+                    <p class="text-[#ff2020] text-lg font-medium pt-2">$ 45,743</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <img class="scale-[1.03] hover:scale-[1] mx-auto transition-transform duration-500" src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/new_product3.png" alt="">
+                <div class="pt-5">
+                    <h1 class="text-[#444444] text-2xl font-bold">Thermo Ball Etip Gloves</h1>
+                    <p class="text-[#ff2020] text-lg font-medium pt-2">$ 45,743</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 gap-7 pt-24 animate__animated animate__fadeInUp wow md:mt-40 md:grid-cols-4">
+            <div class="group relative overflow-hidden md:col-span-2">
+                <img class="h-full w-full" src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/gallery1.png.webp" alt="">
+                <div class="absolute h-full w-full -bottom-0 group-hover:bg-black/50 transition duration-500"></div>
+            </div>
+            <div class="group relative overflow-hidden">
+                <img class="h-full w-full" src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/gallery2.png.webp" alt="">
+                <div class="absolute h-full w-full -bottom-0 group-hover:bg-black/50 transition duration-500"></div>
+            </div>
+            <div class="grid grid-cols-1 gap-7">
+                <div class="group relative overflow-hidden">
+                    <img class="h-full w-full" src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/gallery3.png.webp" alt="">
+                    <div class="absolute h-full w-full -bottom-0 group-hover:bg-black/50 transition duration-500"></div>
+                </div>
+                <div class="group relative overflow-hidden">
+                    <img class="h-full w-full" src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/gallery4.png.webp" alt="">
+                    <div class="absolute h-full w-full -bottom-0 group-hover:bg-black/50 transition duration-500"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- popular items -->
+    <section class="py-12 px-4 mt-28 text-center lg:px-20">
+        <div class="heading">
+            <h1 class="text-4xl font-bold md:text-5xl">Popular Items</h1>
+            <p class="text-[#777] text-base font-normal pt-4 lg:px-72">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+        </div>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div class="group animate__animated animate__fadeInUp wow">
+                <div class="relative overflow-hidden border-b-4 border-[#ff2020]">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/popular1.png" alt="">
+                    <div class="absolute w-full h-full -bottom-0">
+                        <div class="absolute left-72 top-5">
+                            <i class="fa-regular fa-heart text-3xl text-[#333] opacity-0 group-hover:opacity-100 transition duration-700"></i>
+                        </div>
+                        <div class="bg-[#ff2020] text-white py-4 translate-y-[700%] lg:group-hover:translate-y-[555%] transition duration-500">
+                            <h1>Add to cart</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5 text-[#444444]">
+                    <h1 class="text-2xl font-bold">Thermo Ball Etip Gloves</h1>
+                    <p class="text-lg font-medium pt-2">$ 45,743</p>
+                </div>
+            </div>
+            <div class="group animate__animated animate__fadeInUp wow">
+                <div class="relative overflow-hidden border-b-4 border-[#ff2020]">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/popular2.png" alt="">
+                    <div class="absolute w-full h-full -bottom-0">
+                        <div class="absolute left-72 top-5">
+                            <i class="fa-regular fa-heart text-3xl text-[#333] opacity-0 group-hover:opacity-100 transition duration-700"></i>
+                        </div>
+                        <div class="bg-[#ff2020] text-white py-4 translate-y-[700%] lg:group-hover:translate-y-[555%] transition duration-500">
+                            <h1>Add to cart</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5 text-[#444444]">
+                    <h1 class="text-2xl font-bold">Thermo Ball Etip Gloves</h1>
+                    <p class="text-lg font-medium pt-2">$ 45,743</p>
+                </div>
+            </div>
+            <div class="group animate__animated animate__fadeInUp wow">
+                <div class="relative overflow-hidden border-b-4 border-[#ff2020]">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/popular3.png" alt="">
+                    <div class="absolute w-full h-full -bottom-0">
+                        <div class="absolute left-72 top-5">
+                            <i class="fa-regular fa-heart text-3xl text-[#333] opacity-0 group-hover:opacity-100 transition duration-700"></i>
+                        </div>
+                        <div class="bg-[#ff2020] text-white py-4 translate-y-[700%] lg:group-hover:translate-y-[555%] transition duration-500">
+                            <h1>Add to cart</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5 text-[#444444]">
+                    <h1 class="text-2xl font-bold">Thermo Ball Etip Gloves</h1>
+                    <p class="text-lg font-medium pt-2">$ 45,743</p>
+                </div>
+            </div>
+            <div class="group animate__animated animate__fadeInUp wow">
+                <div class="relative overflow-hidden border-b-4 border-[#ff2020]">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/popular4.png" alt="">
+                    <div class="absolute w-full h-full -bottom-0">
+                        <div class="absolute left-72 top-5">
+                            <i class="fa-regular fa-heart text-3xl text-[#333] opacity-0 group-hover:opacity-100 transition duration-700"></i>
+                        </div>
+                        <div class="bg-[#ff2020] text-white py-4 translate-y-[700%] lg:group-hover:translate-y-[555%] transition duration-500">
+                            <h1>Add to cart</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5 text-[#444444]">
+                    <h1 class="text-2xl font-bold">Thermo Ball Etip Gloves</h1>
+                    <p class="text-lg font-medium pt-2">$ 45,743</p>
+                </div>
+            </div>
+            <div class="group animate__animated animate__fadeInUp wow">
+                <div class="relative overflow-hidden border-b-4 border-[#ff2020]">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/popular5.png" alt="">
+                    <div class="absolute w-full h-full -bottom-0">
+                        <div class="absolute left-72 top-5">
+                            <i class="fa-regular fa-heart text-3xl text-[#333] opacity-0 group-hover:opacity-100 transition duration-700"></i>
+                        </div>
+                        <div class="bg-[#ff2020] text-white py-4 translate-y-[700%] lg:group-hover:translate-y-[555%] transition duration-500">
+                            <h1>Add to cart</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5 text-[#444444]">
+                    <h1 class="text-2xl font-bold">Thermo Ball Etip Gloves</h1>
+                    <p class="text-lg font-medium pt-2">$ 45,743</p>
+                </div>
+            </div>
+            <div class="group animate__animated animate__fadeInUp wow">
+                <div class="relative overflow-hidden border-b-4 border-[#ff2020]">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/popular6.png" alt="">
+                    <div class="absolute w-full h-full -bottom-0">
+                        <div class="absolute left-72 top-5">
+                            <i class="fa-regular fa-heart text-3xl text-[#333] opacity-0 group-hover:opacity-100 transition duration-700"></i>
+                        </div>
+                        <div class="bg-[#ff2020] text-white py-4 translate-y-[700%] lg:group-hover:translate-y-[555%] transition duration-500">
+                            <h1>Add to cart</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5 text-[#444444]">
+                    <h1 class="text-2xl font-bold">Thermo Ball Etip Gloves</h1>
+                    <p class="text-lg font-medium pt-2">$ 45,743</p>
+                </div>
+            </div>
+        </div>
+        <button class="btn group relative bg-[#4a4a4b] text-white p-5 px-8 my-28">
+            <div class="absolute w-0 inset-0 bg-[#ff2020] group-hover:w-full transition-all ease-in-out duration-700"></div>
+            <a class="relative text-base font-semibold uppercase" href="">view more Product</a>
+        </button>
+    </section>
+
+
+    <!-- video -->
+    <section class="group relative overflow-hidden bg-[url('https://preview.colorlib.com/theme/timezone/assets/img/gallery/sectin_bg1.png.webp')] bg-no-repeat h-[100vh]">
+        <div class="absolute h-full w-full -bottom-0 group-hover:bg-black/30 transition duration-300"></div>
+        <div class="absolute text-white top-[50%] left-0 translate-x-[35%] right-0 mx-auto md:translate-x-[45%]">
+            <a href="https://youtube.com/shorts/QexSldF9jOY?feature=share">
+                <i class="fa-solid fa-play text-2xl border px-9 py-7 rounded-full hover:text-[#ff2020] hover:bg-white transition duration-300 cursor-pointer"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- watch chois -->
+    <section class="py-12 px-4 mt-28 lg:px-20">
+        <div class="grid grid-cols-1 gap-28 items-center md:grid-cols-4">
+            <div class="col-span-2 animate__animated animate__fadeInLeft wow">
+                <h1 class="text-4xl font-bold md:text-[56px]">Watch of Choice</h1>
+                <p class="text-[#777777] text-[17px] pt-6">Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                <button class="btn group relative bg-[#ff2020] text-white p-3 px-6 mt-10">
+                    <div class="absolute w-0 inset-0 bg-[#4a4a4b] group-hover:w-full transition-all ease-in-out duration-700"></div>
+                    <a class="relative text-base font-semibold uppercase" href="">shop now</a>
+                </button>
+            </div>
+            <div class="col-span-2 pt-6 animate__animated animate__fadeInRight wow md:pt-0">
+                <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/choce_watch1.png" alt="">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-28 items-center mt-28 md:grid-cols-4">
+            <div class="col-span-2 pt-6 animate__animated animate__fadeInLeft wow md:pt-0">
+                <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/choce_watch2.png" alt="">
+            </div>
+            <div class="col-span-2 animate__animated animate__fadeInRight wow">
+                <h1 class="text-4xl font-bold md:text-[56px]">Watch of Choice</h1>
+                <p class="text-[#777777] text-[17px] pt-6">Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                <button class="btn group relative bg-[#ff2020] text-white p-3 px-6 mt-10">
+                    <div class="absolute w-0 inset-0 bg-[#4a4a4b] group-hover:w-full transition-all ease-in-out duration-700"></div>
+                    <a class="relative text-base font-semibold uppercase" href="">shop now</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 mx-4 mt-28 animate__animated animate__fadeInUp wow lg:mx-20">
+        <div class="grid grid-cols-1 gap-12 bg-[#ea0000] p-10 md:grid-cols-3">
+            <div class="text-white">
+                <i class="fa fa-light fa-box text-[40px]"></i>
+                <h6 class="text-xl font-bold py-6">Free Shipping Method</h6>
+                <p class="text-[#d3d1d1]">aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+            </div>
+            <div class="text-white">
+                <i class="fas fa-sharp fa-regular fa-unlock text-[40px]"></i>
+                <h6 class="text-xl font-bold py-6">Free Shipping Method</h6>
+                <p class="text-[#d3d1d1]">aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+            </div>
+            <div class="text-white">
+                <i class="fa-solid fa-rotate text-[40px]"></i>
+                <h6 class="text-xl font-bold py-6">Free Shipping Method</h6>
+                <p class="text-[#d3d1d1]">aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="py-12 px-4 mt-28 animate__animated animate__fadeInUp wow lg:px-20">
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+            <div class="">
+                <img src="https://preview.colorlib.com/theme/timezone/assets/img/logo/logo2_footer.png" alt="">
+                <p class="text-[#868c98] text-base font-normal pt-7">Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.</p>
+            </div>
+            <div class="">
+                <h6 class="text-xl font-medium">Quick Links</h6>
+                <div class="">
+                    <p class="text-[#868c98] font-light text-base pt-7 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">About</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Offers & Discounts</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Get Coupon</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Contact Us</p>
+                </div>
+            </div>
+            <div class="">
+                <h6 class="text-xl font-medium">New Products</h6>
+                <div class="">
+                    <p class="text-[#868c98] font-light text-base pt-7 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Woman Cloth</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Fashion Accessories</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Man Accessories</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Rubber made Toys</p>
+                </div>
+            </div>
+            <div class="">
+                <h6 class="text-xl font-medium">Support</h6>
+                <div class="">
+                    <p class="text-[#868c98] font-light text-base pt-7 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Frequently Asked Questions</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Terms & Conditions</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Privacy Policy</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Report a Payment Issue</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-24 flex flex-col justify-between items-center md:flex-row">
+            <div class="">
+                <p class="text-[#888888] font-light text-base">Copyright ©2023 All rights reserved | This template is made with  <i class="fa-solid fa-heart text-[#ff2020]"></i>
+                    by <span class="text-[#ff2020]" style="font-family: 'Roboto', sans-serif;">Abhijeet</span></p>
+            </div>
+            <div class="text-sm text-[#222222] pt-12 space-x-5 md:pt-0">
+                <i class="fa-brands fa-twitter hover:text-[#ff2020] transition duration-300 cursor-pointer"></i>
+                <i class="fa-brands fa-facebook-f hover:text-[#ff2020] transition duration-300 cursor-pointer"></i>
+                <i class="fa-brands fa-behance hover:text-[#ff2020] transition duration-300 cursor-pointer"></i>
+                <i class="fa-solid fa-globe hover:text-[#ff2020] transition duration-300 cursor-pointer"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script>
+       window.addEventListener('scroll',()=>{
+            let navbar = document.querySelector('nav');
+            if(window.pageYOffset > 200){
+                navbar.classList.add('sticky');
+            }else{
+                navbar.classList.remove('sticky');
+            }
+        })
+    </script>
+
+    <!-- wow js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

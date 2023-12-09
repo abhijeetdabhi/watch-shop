@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <!-- Tailwind Script  -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- box-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  
+    <!-- awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://preview.colorlib.com/theme/timezone/assets/img/favicon.ico">
+      
+    <!--Title-->
+    <title>Watch Shop | eCommers</title>
+  
+    <!-- style -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); /*font-family: 'Roboto', sans-serif;*/
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap'); /*font-family: 'Josefin Sans', sans-serif;*/
+  
+        *{
+            font-family: 'Josefin Sans', sans-serif;
+        }
+  
+        p,h6{
+            font-family: 'Roboto', sans-serif;
+        }
+  
+        nav.sticky{
+            position: fixed;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+      </style>
+</head>
+<body>
+  
+    <!-- nav -->
+    <nav class="flex justify-between w-full z-10 bg-white px-4 pt-8 lg:px-6">
+        <div class="logo h-14">
+            <img src="https://preview.colorlib.com/theme/timezone/assets/img/logo/logo.png" alt="">
+        </div>
+        <ul class="hidden text-base font-semibold space-x-10 lg:flex">
+            <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="watch.html">Home</a></li>
+            <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="shop.html">Shop</a></li>
+            <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="watch.html">About</a></li>
+            <li class="group relative h-14 hover:text-[#ff2020] cursor-pointer transition duration-300">
+                <a href="watch.html">Latest</a>
+                <span class="absolute uppercase text-[10px] bg-[#ff003c] text-white px-1 h-5 rounded-md -top-4 left-11">hot</span>
+                <div class="absolute hidden bg-white w-40 p-4 group-hover:block border-t-4 border-[#ff2020] rounded-lg top-14 -left-3">
+                    <a href="watch.html">
+                        <h4 class="text-[#0b1c39] hover:text-[#ff2020] transition duration-300">Product List</h4>
+                    </a>
+                    <a href="product-detail.html">
+                        <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Product Details</h4>
+                    </a>
+                </div>
+            </li>
+            <li class="group relative h-14 hover:text-[#ff2020] cursor-pointer transition duration-300">
+                <a href="watch.html">Blog</a>
+                <div class="absolute hidden bg-white w-40 space-y-3 p-4 group-hover:block border-t-4 border-[#ff2020] rounded-lg top-14 -left-3">
+                    <a href="blog.html">
+                        <h4 class="text-[#0b1c39] hover:text-[#ff2020] transition duration-300">Blog</h4>
+                    </a>
+                    <a href="blog-detail.html">
+                        <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Blog Details</h4>
+                    </a>
+                </div>
+            </li>
+            <li class="group relative h-14 hover:text-[#ff2020] cursor-pointer transition duration-300">
+                <a href="watch.html">Pages</a>
+                <div class="absolute hidden bg-white w-44 space-y-3 p-4 group-hover:block border-t-4 border-[#ff2020] rounded-lg top-14 -left-3">
+                    <a href="login.html">
+                        <h4 class="text-[#0b1c39] hover:text-[#ff2020] transition duration-300">Login</h4>
+                    </a>
+                    <a href="cart.html">
+                        <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Cart</h4>
+                    </a>
+                    <a href="element.html">
+                        <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Element</h4>
+                    </a>
+                    <a href="watch.html">
+                        <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Confirmation</h4>
+                    </a>
+                    <a href="checkout.html">
+                        <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Product Checkout</h4>
+                    </a>
+                </div>
+            </li>
+            <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="flex text-base space-x-9 items-center">
+            <div class="space-x-5 h-14">
+                <i class="fa-solid fa-magnifying-glass hover:text-[#ff2020] cursor-pointer transition duration-300"></i>
+                <i class="fa-regular fa-user hover:text-[#ff2020] cursor-pointer transition duration-300"></i>
+                <i class="fa-solid fa-cart-shopping hover:text-[#ff2020] cursor-pointer transition duration-300"></i>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="flex flex-wrap text-base justify-center font-semibold space-x-10 pt-4 lg:hidden">
+        <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="watch.html">Home</a></li>
+        <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="shop.html">Shop</a></li>
+        <li class="group relative h-14 z-10 hover:text-[#ff2020] cursor-pointer transition duration-300">
+            <a class="select-none">Latest</a>
+            <span class="hidden absolute uppercase text-[10px] bg-[#ff003c] text-white px-1 h-5 rounded-md -top-4 left-11 md:block">hot</span>
+            <div class="absolute hidden bg-white w-40 p-4 group-hover:block border-t-4 border-[#ff2020] rounded-lg top-14 -left-3">
+                <a href="watch.html">
+                    <h4 class="text-[#0b1c39] hover:text-[#ff2020] transition duration-300">Product List</h4>
+                </a>
+                <a href="product-detail.html">
+                    <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Product Details</h4>
+                </a>
+            </div>
+        </li>
+        <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="watch.html">About</a></li>
+        <li class="group relative h-14 z-10 hover:text-[#ff2020] cursor-pointer transition duration-300">
+            <a class="select-none">Blog</a>
+            <div class="absolute hidden bg-white w-40 space-y-3 p-4 group-hover:block border-t-4 border-[#ff2020] rounded-lg top-14 -left-3">
+                <a href="blog.html">
+                    <h4 class="text-[#0b1c39] hover:text-[#ff2020] transition duration-300">Blog</h4>
+                </a>
+                <a href="blog-detail.html">
+                    <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Blog Details</h4>
+                </a>
+            </div>
+        </li>
+        <li class="group relative h-14 hover:text-[#ff2020] cursor-pointer transition duration-300">
+            <a class="select-none">Pages</a>
+            <div class="absolute hidden z-10 bg-white w-44 space-y-3 p-4 group-hover:block border-t-4 border-[#ff2020] rounded-lg top-14 -left-3">
+                <a href="login.html">
+                    <h4 class="text-[#0b1c39] hover:text-[#ff2020] transition duration-300">Login</h4>
+                </a>
+                <a href="cart.html">
+                    <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Cart</h4>
+                </a>
+                <a href="element.html">
+                    <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Element</h4>
+                </a>
+                <a href="watch.html">
+                    <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Confirmation</h4>
+                </a>
+                <a href="checkout.html">
+                    <h4 class="text-[#0b1c39] pt-3 hover:text-[#ff2020] transition duration-300">Product Checkout</h4>
+                </a>
+            </div>
+        </li>
+        <li class="hover:text-[#ff2020] cursor-pointer transition duration-300"><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <section class="main bg-[url('https://preview.colorlib.com/theme/timezone/assets/img/hero/about_hero.png.webp')] bg-cover bg-center bg-no-repeat h-[50vh] md:h-[90vh] px-4">
+        <h1 class="relative text-[#0b1c39] text-4xl font-bold text-center top-[40%] md:text-[70px]">Blog</h1>
+    </section>
+    
+
+    <section>
+        <div class="flex flex-col justify-between px-4 pt-24 py-12 lg:space-x-8 lg:flex-row lg:px-20">
+            <div class="space-y-20">
+                <div class="shadow-xl">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/blog/single_blog_1.png" alt="">
+                    <div class="relative bg-[#ff2020] text-white mx-7 p-4 px-8 w-24 -mt-12 rounded-lg hover:bg-transparent hover:text-[#ff2020]">
+                        <span class="text-3xl font-semibold">15</span>
+                        <p class="text-lg">Jan</p>
+                    </div>
+                    <div class="space-y-4 pt-12 p-7">
+                        <h1 class="text-[#0b1c39] text-2xl font-semibold hover:text-[#ff2020]">Google inks pact for new 35-storey office</h1>
+                        <p class="text-[#777777]">That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                        <div class="text-sm text-[#999999] flex items-center space-x-3">
+                            <p class="hover:text-[#ff2020] cursor-pointer"><i class="fa-solid fa-user"></i> Travel, Lifestyle </p>
+                            <span class="text-black">|</span> 
+                            <p class="hover:text-[#ff2020] cursor-pointer"><i class="fa-solid fa-comments"></i>  03 Comments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-xl">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/blog/single_blog_2.png" alt="">
+                    <div class="relative bg-[#ff2020] text-white mx-7 p-4 px-8 w-24 -mt-12 rounded-lg hover:bg-transparent hover:text-[#ff2020]">
+                        <span class="text-3xl font-semibold">15</span>
+                        <p class="text-lg">Jan</p>
+                    </div>
+                    <div class="space-y-4 pt-12 p-7">
+                        <h1 class="text-[#0b1c39] text-2xl font-semibold hover:text-[#ff2020]">Google inks pact for new 35-storey office</h1>
+                        <p class="text-[#777777]">That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                        <div class="text-sm text-[#999999] flex items-center space-x-3">
+                            <p class="hover:text-[#ff2020] cursor-pointer"><i class="fa-solid fa-user"></i> Travel, Lifestyle </p>
+                            <span class="text-black">|</span> 
+                            <p class="hover:text-[#ff2020] cursor-pointer"><i class="fa-solid fa-comments"></i>  03 Comments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-xl">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/blog/single_blog_3.png" alt="">
+                    <div class="relative bg-[#ff2020] text-white mx-7 p-4 px-8 w-24 -mt-12 rounded-lg hover:bg-transparent hover:text-[#ff2020]">
+                        <span class="text-3xl font-semibold">15</span>
+                        <p class="text-lg">Jan</p>
+                    </div>
+                    <div class="space-y-4 pt-12 p-7">
+                        <h1 class="text-[#0b1c39] text-2xl font-semibold hover:text-[#ff2020]">Google inks pact for new 35-storey office</h1>
+                        <p class="text-[#777777]">That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                        <div class="text-sm text-[#999999] flex items-center space-x-3">
+                            <p class="hover:text-[#ff2020] cursor-pointer"><i class="fa-solid fa-user"></i> Travel, Lifestyle </p>
+                            <span class="text-black">|</span> 
+                            <p class="hover:text-[#ff2020] cursor-pointer"><i class="fa-solid fa-comments"></i>  03 Comments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-xl">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/blog/single_blog_4.png" alt="">
+                    <div class="relative bg-[#ff2020] text-white mx-7 p-4 px-8 w-24 -mt-12 rounded-lg hover:bg-transparent hover:text-[#ff2020]">
+                        <span class="text-3xl font-semibold">15</span>
+                        <p class="text-lg">Jan</p>
+                    </div>
+                    <div class="space-y-4 pt-12 p-7">
+                        <h1 class="text-[#0b1c39] text-2xl font-semibold hover:text-[#ff2020]">Google inks pact for new 35-storey office</h1>
+                        <p class="text-[#777777]">That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                        <div class="text-sm text-[#999999] flex items-center space-x-3">
+                            <p class="hover:text-[#ff2020] cursor-pointer"><i class="fa-solid fa-user"></i> Travel, Lifestyle </p>
+                            <span class="text-black">|</span> 
+                            <p class="hover:text-[#ff2020] cursor-pointer"><i class="fa-solid fa-comments"></i>  03 Comments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-xl">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/blog/single_blog_5.png" alt="">
+                    <div class="relative bg-[#ff2020] text-white mx-7 p-4 px-8 w-24 -mt-12 rounded-lg hover:bg-transparent hover:text-[#ff2020]">
+                        <span class="text-3xl font-semibold">15</span>
+                        <p class="text-lg">Jan</p>
+                    </div>
+                    <div class="space-y-4 pt-12 p-7">
+                        <h1 class="text-[#0b1c39] text-2xl font-semibold hover:text-[#ff2020]">Google inks pact for new 35-storey office</h1>
+                        <p class="text-[#777777]">That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                        <div class="text-sm text-[#999999] flex items-center space-x-3">
+                            <p class="hover:text-[#ff2020] cursor-pointer"><i class="fa-solid fa-user"></i> Travel, Lifestyle </p>
+                            <span class="text-black">|</span> 
+                            <p class="hover:text-[#ff2020] cursor-pointer"><i class="fa-solid fa-comments"></i>  03 Comments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-16 lg:pt-0 lg:w-[50%]">
+                <div class="bg-[#fbf9ff] p-8">
+                    <div class="flex items-center">
+                        <input class="w-[90%]" type="text" placeholder="Search keyword">
+                        <i class="fa-solid fa-magnifying-glass bg-[#ff2020] text-white p-[13px]"></i>
+                    </div>
+                    <div class="text-center mt-4 bg-[#ff2020] text-white uppercase text-[15px] font-medium p-3 tracking-widest border border-[#ff2020] hover:bg-white hover:text-black w-full">
+                        <a class="" href="">search</a>
+                    </div>
+                </div>
+                <div class="bg-[#fbf9ff] p-8 mt-6">
+                    <h1 class="text-[#0b1c39] text-xl font-medium">Category</h1>
+                    <hr class="mt-3 mb-12">
+                    <a href="blog.html">
+                        <p class="text-[#777777] text-base hover:text-[#ff2020]">Resaurant food (37)</p>
+                    </a>
+                    <hr class="my-4">
+                    <a href="blog.html">
+                        <p class="text-[#777777] text-base hover:text-[#ff2020]">Travel news (10)</p>
+                    </a>
+                    <hr class="my-4">
+                    <a href="blog.html">
+                        <p class="text-[#777777] text-base hover:text-[#ff2020]">Modern technology (03)</p>
+                    </a>
+                    <hr class="my-4">
+                    <a href="blog.html">
+                        <p class="text-[#777777] text-base hover:text-[#ff2020]">Product (11)</p>
+                    </a>
+                    <hr class="my-4">
+                    <a href="blog.html">
+                        <p class="text-[#777777] text-base hover:text-[#ff2020]">Inspiration 21</p>
+                    </a>
+                    <hr class="my-4">
+                    <a href="blog.html">
+                        <p class="text-[#777777] text-base hover:text-[#ff2020]">Health Care (21) 9</p>
+                    </a>
+                </div>
+                <div class="bg-[#fbf9ff] p-8 mt-6">
+                    <h1 class="text-[#0b1c39] text-xl font-medium">Recent Post</h1>
+                    <hr class="mt-3 mb-12">
+                    <div class="space-y-5">
+                        <div class="flex items-center space-x-4">
+                            <img src="https://preview.colorlib.com/theme/timezone/assets/img/post/post_1.png" alt="">
+                            <div class="">
+                                <h1 class="text-base font-medium text-[#0b1c39] hover:text-[#ff2020] cursor-pointer">From life was you fish...</h1>
+                                <p class="text-sm text-[#777777]">January 12, 2019</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <img src="https://preview.colorlib.com/theme/timezone/assets/img/post/post_2.png" alt="">
+                            <div class="">
+                                <h1 class="text-base font-medium text-[#0b1c39] hover:text-[#ff2020] cursor-pointer">The Amazing Hubble</h1>
+                                <p class="text-sm text-[#777777]">02 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <img src="https://preview.colorlib.com/theme/timezone/assets/img/post/post_3.png" alt="">
+                            <div class="">
+                                <h1 class="text-base font-medium text-[#0b1c39] hover:text-[#ff2020] cursor-pointer">Astronomy Or Astrology</h1>
+                                <p class="text-sm text-[#777777]">03 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <img src="https://preview.colorlib.com/theme/timezone/assets/img/post/post_4.png" alt="">
+                            <div class="">
+                                <h1 class="text-base font-medium text-[#0b1c39] hover:text-[#ff2020] cursor-pointer">Asteroids telescope</h1>
+                                <p class="text-sm text-[#777777]">01 Hours ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#fbf9ff] p-8 mt-6">
+                    <h1 class="text-[#0b1c39] text-xl font-medium">Tag Clouds</h1>
+                    <hr class="mt-4 mb-10">
+                    <div class="grid grid-cols-3 gap-2">
+                        <p class="text-[13px] text-[#777] bg-white border-[1px] py-1 px-3 border-[#eeeeee] hover:text-white hover:bg-[#ff2020] transition duration-300 cursor-pointer text-center">project</p>
+                        <p class="text-[13px] text-[#777] bg-white border-[1px] py-1 px-3 border-[#eeeeee] hover:text-white hover:bg-[#ff2020] transition duration-300 cursor-pointer text-center">love</p>
+                        <p class="text-[13px] text-[#777] bg-white border-[1px] py-1 px-3 border-[#eeeeee] hover:text-white hover:bg-[#ff2020] transition duration-300 cursor-pointer text-center">technology</p>
+                        <p class="text-[13px] text-[#777] bg-white border-[1px] py-1 px-3 border-[#eeeeee] hover:text-white hover:bg-[#ff2020] transition duration-300 cursor-pointer text-center">travel</p>
+                        <p class="text-[13px] text-[#777] bg-white border-[1px] py-1 px-3 border-[#eeeeee] hover:text-white hover:bg-[#ff2020] transition duration-300 cursor-pointer text-center">restaurant</p>
+                        <p class="text-[13px] text-[#777] bg-white border-[1px] py-1 px-3 border-[#eeeeee] hover:text-white hover:bg-[#ff2020] transition duration-300 cursor-pointer text-center">life style</p>
+                        <p class="text-[13px] text-[#777] bg-white border-[1px] py-1 px-3 border-[#eeeeee] hover:text-white hover:bg-[#ff2020] transition duration-300 cursor-pointer text-center">desing</p>
+                        <p class="text-[13px] text-[#777] bg-white border-[1px] py-1 px-3 border-[#eeeeee] hover:text-white hover:bg-[#ff2020] transition duration-300 cursor-pointer text-center">illustration</p>
+                    </div>
+                </div>
+                <div class="bg-[#fbf9ff] p-8 mt-6">
+                    <h1 class="text-[#0b1c39] text-xl font-medium">Instagram Feeds</h1>
+                    <hr class="mt-4 mb-10">
+                    <div class="grid grid-cols-3 gap-3">
+                        <img src="https://preview.colorlib.com/theme/timezone/assets/img/post/post_5.png" alt="">
+                        <img src="https://preview.colorlib.com/theme/timezone/assets/img/post/post_6.png" alt="">
+                        <img src="https://preview.colorlib.com/theme/timezone/assets/img/post/post_7.png" alt="">
+                        <img src="https://preview.colorlib.com/theme/timezone/assets/img/post/post_8.png" alt="">
+                        <img src="https://preview.colorlib.com/theme/timezone/assets/img/post/post_9.png" alt="">
+                        <img src="https://preview.colorlib.com/theme/timezone/assets/img/post/post_10.png" alt="">
+                    </div>
+                </div>
+                <div class="bg-[#fbf9ff] p-8 mt-6">
+                    <h1 class="text-[#0b1c39] text-xl font-medium">Newsletter</h1>
+                    <hr class="mt-4 mb-10">
+                    <div class="flex items-center">
+                        <input class="w-full" type="text" placeholder="Enter Email">
+                    </div>
+                    <div class="text-center mt-4 bg-[#ff2020] text-white uppercase text-[15px] font-medium p-3 tracking-widest border border-[#ff2020] hover:bg-white hover:text-black w-full transition duration-300 cursor-pointer">
+                        <a class="" href="">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="py-12 px-4 mt-28 lg:px-20">
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+            <div class="">
+                <img src="https://preview.colorlib.com/theme/timezone/assets/img/logo/logo2_footer.png" alt="">
+                <p class="text-[#868c98] text-base font-normal pt-7">Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.</p>
+            </div>
+            <div class="">
+                <h6 class="text-xl font-medium">Quick Links</h6>
+                <div class="">
+                    <p class="text-[#868c98] font-light text-base pt-7 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">About</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Offers & Discounts</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Get Coupon</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Contact Us</p>
+                </div>
+            </div>
+            <div class="">
+                <h6 class="text-xl font-medium">New Products</h6>
+                <div class="">
+                    <p class="text-[#868c98] font-light text-base pt-7 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Woman Cloth</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Fashion Accessories</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Man Accessories</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Rubber made Toys</p>
+                </div>
+            </div>
+            <div class="">
+                <h6 class="text-xl font-medium">Support</h6>
+                <div class="">
+                    <p class="text-[#868c98] font-light text-base pt-7 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Frequently Asked Questions</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Terms & Conditions</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Privacy Policy</p>
+                    <p class="text-[#868c98] font-light text-base pt-4 translate-x-0 hover:text-[#ff2020] hover:translate-x-4 transition duration-300 cursor-pointer">Report a Payment Issue</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-24 flex flex-col justify-between items-center md:flex-row">
+            <div class="">
+                <p class="text-[#888888] font-light text-base">Copyright ©2023 All rights reserved | This template is made with  <i class="fa-solid fa-heart text-[#ff2020]"></i>
+                    by <span class="text-[#ff2020]" style="font-family: 'Roboto', sans-serif;">Abhijeet</span></p>
+            </div>
+            <div class="text-sm text-[#222222] pt-12 space-x-5 md:pt-0">
+                <i class="fa-brands fa-twitter hover:text-[#ff2020] transition duration-300 cursor-pointer"></i>
+                <i class="fa-brands fa-facebook-f hover:text-[#ff2020] transition duration-300 cursor-pointer"></i>
+                <i class="fa-brands fa-behance hover:text-[#ff2020] transition duration-300 cursor-pointer"></i>
+                <i class="fa-solid fa-globe hover:text-[#ff2020] transition duration-300 cursor-pointer"></i>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- script -->
+    <script>
+        window.addEventListener('scroll',()=>{
+             let navbar = document.querySelector('nav');
+             if(window.pageYOffset > 200){
+                 navbar.classList.add('sticky');
+             }else{
+                 navbar.classList.remove('sticky');
+             }
+         })
+     </script>
+</body>
+</html>
